@@ -1,9 +1,15 @@
-<!DOCTYPE html><!--Document type definition: enables correct display mode for html5 -->
-<html> <!--html tag -the outer container for an html document -->
-<head><!--defines area containing information about the document (such as title, meta, link, styles etc.) -->
-    <meta name="viewport" content="width=divice-width, initial-scale=1" charset=utf-8><!--Metadata:defines keywords, description, encoding etc.  -->
+<!DOCTYPE html>
+<!--Document type definition: enables correct display mode for html5 -->
+<html>
+<!--html tag -the outer container for an html document -->
+
+<head>
+    <!--defines area containing information about the document (such as title, meta, link, styles etc.) -->
+    <meta name="viewport" content="width=divice-width, initial-scale=1" charset=utf-8>
+    <!--Metadata:defines keywords, description, encoding etc.  -->
     <link rel="stylesheet" href="css/styles.css">
-    <title>Town Fine Dining | Welcome</title><!--Is a required item; defines the title in the browser toolbar-->
+    <title>Town Fine Dining | Welcome</title>
+    <!--Is a required item; defines the title in the browser toolbar-->
     <!-- <style>
         body,
         html {
@@ -21,101 +27,135 @@
     </style> -->
 </head>
 <!--Top Navigation-->
-<body><!--body tag defines the body of the document; visible elements-->
+
+<body>
+    <!--body tag defines the body of the document; visible elements-->
+    <a id="home"></a>
     <header>
+
         <img class="logo" src="images\TownRed.png" height="auto" width="15%" alt="logo">
+        <!--defines an  image in an html page-->
         <nav>
-            <ul class="nav_links"> <!--Unordered List: creates a bulleted list as opposed ot ordered list which displays numbered list items -->
-                <li><a href="#"></a>Home</li> <!--list item- displays the individual items in an unordered or ordered list -->
-                <li><a href="#"></a>About Us</li>                 
-                <li><a href="#"></a>Reservations</li>
-                <li><a href="#"></a>Menu</li>                
+            <ul class="nav_links">
+                <!--Unordered List: creates a bulleted list as opposed ot ordered list which displays numbered list items -->
+                <!-- <li><a href="#home">Home</a></li> -->
+                <!--list item- displays the individual items in an unordered or ordered list -->
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#res">Reservations</a></li>
+                <li><a href="#">Menu</a></li>
             </ul>
         </nav>
         <a class="cta" href="#"><button>Contact</button></a>
+
     </header>
     <div class="parallax1">
         <div class="heading">
-        <img class="town" src="images/TownWhite.png" height="auto" width="80%" > 
+            <img class="town" src="images/TownWhite.png" height="auto" width="80%">
         </div>
     </div>
 
+    <a id="about"></a>
     <section class="secOne">
-        <h1><img class="logo" src="images\TownRed.png" height="auto" width="12%"><br /><span style="color:#000 ;">Fine Chinese Cuisine</span></h1><!--Heading level 1; text appears larger and bolder as numbers decriment default size is 32px-->
+        <h1><a href="#home"><img class="logo" src="images\TownRed.png" height="auto" width="12%"></a><br /><span
+                id="fine" style="color:#000 ;">Fine Chinese Cuisine</span></h1>
+        <!--Heading level 1; text appears larger and bolder as numbers decriment default size is 32px-->
         <h3 style="color: #fff;"><em>We combine a variety of chinese cuisine
-            to excite and delight our customers.</em></h3> <!--em:  emphasis tag - italicizes text -->
+                to excite and delight our customers.</em></h3>
+        <!--em:  emphasis tag - italicizes text -->
         <div class="one-col">
-            <p>  Our vision for the future is to create <!--paragraph tag- defines paragraph text-->
+            <p> Our vision for the future is to create
+                <!--paragraph tag- defines paragraph text-->
                 experiential dining that is more than just
                 a night out.<br /> We aim to bring quality and
-                luxury across all aspects of our brand.<br /> <!--Creates a line break in a line of text or in between paragraphs-->
+                luxury across all aspects of our brand.<br />
+                <!--Creates a line break in a line of text or in between paragraphs-->
                 The approach of TOWN is to develop our
                 brand with the understanding of both our
                 culture and consumer insights.<br /> Within our
                 vision always lives the promise of inspiring
                 creativity, conversation and quality.
-            </p>          
-        </div>        
+            </p>
+        </div>
     </section>
-
     <!-- <div style="height: 1000px;  opacity: 60%; font-size: 36px;">
         scrolling div
     </div> -->
 
     <div class="parallax2">
-        <Div >          
+        <Div>
         </Div>
     </div>
-
+    <a id="about"> </a>
     <section class="secTwo">
-    <div class="dark" class="heading-small">
-        <h2 style="color: #be1e2d; text-transform: uppercase;" > 
-            Mission Statement 
-        </h2>
+        <div class="dark" class="heading-small">
+            <h2 style="color: #be1e2d; text-transform: uppercase;">
+                Mission Statement
+            </h2>
             <div class="one-col">
-            <p> To bring quality, style and the wish for good fortune to all 
-                of out guests. <br /> We provide a high-end experience through Chinese cuisine.
-            </p>
+                <p> To bring quality, style and the wish for good fortune to all
+                    of out guests. <br /> We provide a high-end experience through Chinese cuisine.
+                </p>
+            </div>
         </div>
-    </div>
     </section>
-   
 
     <div class="parallax3">
-        <div class="dark">
-         
-        </div>
     </div>
-            <section class="secThree">
-                <div class="dark" class="heading-small">
-                    <h2> 
-                        More text type stuff
-                    </h2>
-            <div class="two-col">
-                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Pariatur quisquam maxime similique minima iusto, ex ullam
-                    incidunt explicabo non atque odio quas doloribus molestiae
-                    soluta dolorum repellendus, necessitatibus, delectus praesentium.
-                </p>
-            </div>
-            <div class="two-col">
-                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Pariatur quisquam maxime similique minima iusto, ex ullam
-                    incidunt explicabo non atque odio quas doloribus molestiae
-                    soluta dolorum repellendus, necessitatibus, delectus praesentium.
-                </p>
-            </div>
-        </div>
-    </section>
 
-    
-    <div class="parallax4" >
+    <a id="res">
+        <section class="secThree">
+            <div class="dark" class="heading-small">
+                <h3><a href="#home"><img class="logo" src="images\TownRed.png" height="auto" width="12%"></a><br /><span
+                        id="fine" style="color:#000 ;">Fine Chinese Cuisine</span></h3>
+                <h1>
+                    Reservations
+                </h1>
+                <div class="reservations">
+                    <form>
+                        <!-- <form > action="/action_page.php" -->
+                        First name:<br>
+                        <input type="text" name="firstname"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname">
+                        <br><br>
+                        Email:<br>
+                        <input type="email">
+                        <br><br>
+                        Telephone:<br>
+                        <input type="tel">
+                        <br><br>
+                        <input type="datetime-local">
+                        <br><br>
+                        <select name="Type">
+                            <h3>Time</h3>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                        </select>
+                        <br><br>
+
+                        <input type="submit">
+                    </form>
+                </div>
+                <!-- <div class="two-col">
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Pariatur quisquam maxime similique minima iusto, ex ullam
+                        incidunt explicabo non atque odio quas doloribus molestiae
+                        soluta dolorum repellendus, necessitatibus, delectus praesentium.
+                    </p>
+                </div> -->
+            </div>
+        </section>
+    </a>
+
+    <div class="parallax4">
         <div>
-            testing
+
         </div>
     </div>
 
-
+    <footer class="footer">
+        <p style="font-family: majesti-banner-light, serif;">Copyright 2020 Town Fine Dining</p>
+    </footer c>
 </body>
 
 </html>

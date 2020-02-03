@@ -9,13 +9,6 @@ body, html {
     text-align: center;
 }
 
-.nav {
-    font-weight: 500;
-    font-size:16px;
-    color: #fff;
-    text-decoration: none;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,22 +18,32 @@ header {
 
 .logo {
     cursor: pointer;
+    margin-left: 0;
 }
 
-.nav_links   {
-  list-style: none;    
+nav .nav_links{
+    width: 100%;
+    float: left;
 }
 
-.nav_links  li {
+nav .nav_links  li {        
+    text-align: center;    
+    list-style: none;  
     display: inline-block;
     padding: 0px 20px;    
 }
 
-.nav_links li a {
+nav .nav_links li a {
     transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size:1.5em;
+    font-family:majesti-banner-light, serif;
 }
 
-.nav_links li a:hover {
+nav .nav_links li a:hover {
     color:#be1e2d;
 }
 
@@ -79,6 +82,19 @@ section {
     overflow: auto;
     padding: 50px 80px;
 }
+h3 {
+    font-family:majesti-banner-light, serif;
+    font-size: 1.5em;
+}
+
+#fine {
+font-family:majesti-banner-light;
+color:#000;
+}
+
+.one-col {
+    font-family:majesti-banner-light;
+}
 
 .dark {
     overflow: auto;
@@ -89,22 +105,29 @@ section {
 
 
 .secOne {
-    background-color: #41393d ;
-    padding-bottom: 0;
+    background-color: #41393d ; 
     color: #fff;   
+    scroll-padding-top: 2em;
+    padding-bottom: 2em;
+    font-family:majesti-banner-light;
 
 }
 
 .secTwo {
-    background-color: #41393d;
-    color: #ef4e22;
-    height:20%;
-    overflow: hidden;
+    background-color: #41393d; 
+    overflow: hidden;     
+    color: #fff;   
+    padding-bottom: 0em;
+    font-family:majesti-banner-light;
 }
 
 .secThree {
     background-color: #41393d;
     color: #ef4e22;
+    height:70%;
+    font-family:majesti-banner-light;
+    scroll-padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .parallax1 {
@@ -149,5 +172,17 @@ section {
     .two-col {
         width: 100%;
         padding: 0 ;
+    }
+    .footer {
+        background-color: #41393d; 
+        overflow: hidden;     
+        color: #fff;  
+        padding-bottom: 2em;
+    }
+    .footer p {
+        font-family: majesti-banner-light, serif;
+        color: #fff;
+        font-size: .5em;
+        
     }
 }
