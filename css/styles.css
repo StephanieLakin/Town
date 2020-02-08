@@ -86,6 +86,9 @@ h3 {
     font-family:majesti-banner-light, serif;
     font-size: 1.5em;
 }
+h1 {
+    color: #be1e2d;
+}
 
 #fine {
 font-family:majesti-banner-light;
@@ -107,7 +110,7 @@ color:#000;
 .secOne {
     background-color: #41393d ; 
     color: #fff;   
-    scroll-padding-top: 2em;
+    padding-top: 2em;
     padding-bottom: 2em;
     font-family:majesti-banner-light;
 
@@ -115,7 +118,9 @@ color:#000;
 
 .secTwo {
     background-color: #41393d; 
-    overflow: hidden;     
+    overflow: hidden; 
+    padding-top: 0;
+    margin-top: 0;    
     color: #fff;   
     padding-bottom: 0em;
     font-family:majesti-banner-light;
@@ -126,7 +131,7 @@ color:#000;
     color: #ef4e22;
     height:70%;
     font-family:majesti-banner-light;
-    scroll-padding-top: 2em;
+    padding-top: 2em;
     padding-bottom: 2em;
 }
 
@@ -159,9 +164,55 @@ color:#000;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-y: hidden;
+}
+/* reservation form */
+.reserve {
+    max-width:50%; 
+    height: auto;
+    margin:1rem auto;
+    border: .5rem solid #fff;
+    border-radius:3em;
+    border-style:double;
+    padding: 0.5rem;       
+    background-color: #41393d; 
 }
 
+label {
+    display: block;
+    text-align: center ;
+} 
+input textarea {
+    display: block;
+    width: 90%;  
+}
+
+input {
+    border-radius: .5em;
+    width: 80%;
+    height: 3rem;  
+    margin: 0 auto;    
+}
+.datetime-local {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1rem
+}
+.submit {    
+    width: 30%;
+    font-size: 1rem;
+    background-color: #be1e2d;
+}
+    
+
+/* select > option:nth-child(1) {
+    font-size: 3rem;
+    text-align: center;
+} */
+
+
 /* menu */
+
 .menuBody {
     margin: 0;
     padding: 0;
@@ -183,11 +234,12 @@ color:#000;
     padding: 0;
     position: relative;
     width: 30%;
-    height: auto%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
+
 ul li {
      list-style: none;
 }
