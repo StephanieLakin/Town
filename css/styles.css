@@ -1,4 +1,4 @@
-body, html {
+/* body, html {
     height: 100vh;
     background-color:#41393d ;
     margin: 0;
@@ -14,11 +14,32 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+} */
+body > header > img .logo {
+    cursor: pointer;
+    margin-left: 0;
+    width: 15%;
+    height: auto;
 }
+
 
 .logo {
     cursor: pointer;
     margin-left: 0;
+    width: 15%;
+    height: auto;
+    
+}
+
+.town {
+    height:auto;
+     width:80%;
+}
+
+.contactModal {
+    width: 7rem;
+    height: auto;
+    text-align: center;
 }
 
 nav .nav_links{
@@ -124,6 +145,7 @@ color:#000;
     color: #fff;   
     padding-bottom: 0em;
     font-family:majesti-banner-light;
+    height: auto;
 }
 
 .secThree {
@@ -167,10 +189,54 @@ color:#000;
     overflow-y: hidden;
 }
 /* reservation form */
-.reserve {
-    max-width:50%; 
+
+/* .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+.Chopsticks {
+    width: 100%; 
     height: auto;
-    margin:1rem auto;
+    margin: auto;
+    border: .5rem solid #fff;
+    border-radius:3em;
+    border-style:double;
+    padding: 0.5rem;
+}
+
+.food {
+    width: 100%; 
+    height: auto;
+    margin: auto;
+    border: .5rem solid #fff;
+    border-radius:3em;
+    border-style:double;
+    padding: 0.5rem;
+}
+
+.reserve {
+    max-width: 60%; 
+    height: auto;
+    margin:2em auto;
     border: .5rem solid #fff;
     border-radius:3em;
     border-style:double;
