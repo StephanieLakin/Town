@@ -11,23 +11,24 @@
     <title>Town Fine Dining | Welcome</title>
     <!--Is a required item; defines the title in the browser toolbar-->
     <style>
-        body, html {
-    height: 100vh;
-    background-color:#41393d ;
-    margin: 0;
-    font-family: majesti, sans-serif;
-    line-height: 180%;
-     color: white ;
-    ;
-    text-align: center;
-}
+        body,
+        html {
+            height: 100vh;
+            background-color: #41393d;
+            margin: 0;
+            font-family: majesti, sans-serif;
+            line-height: 180%;
+            color: white;
+            ;
+            text-align: center;
+        }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-}
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+        }
     </style>
 </head>
 <!--Top Navigation-->
@@ -49,20 +50,54 @@ header {
                 <li><a href="menu.html">Menu</a></li>
             </ul>
         </nav>
-        <form action="#">
-            <input type="submit" value="Contact" class="contactModal" />
-        </form>
+        <form action="#" class="contact">
+            <div>
+                <a class="button" href="#modal1" id="contactModal">Contact Us</a>
+            </div>
+            <div id="modal1" class="overlay">
+                <div class="modal">
+                    <h2>Questions or Concerns:</h2>
+                    <a class="close" href="#">×</a>
+                    <div class="content">
+                        <form class="contact">
+                            <label for="firstname" class="modalFullName">
+                                Name:<br>
+                                <input type="text" id="Modalirstname">
+                            </label>
+                            <br><br>
+                            <label for="email" class="modalEmail">
+                                Email:<br>
+                                <input type="email">
+                            </label>
+                            <br><br>
+
+                            <label for="phone" class="modalPhone">
+                                Telephone:<br>
+                                <input type="tel">
+                            </label>
+                            <br><br>
+                            <label for="message" class="modalMessage">
+                                Message:<br>
+                                <textarea></textarea>
+                            </label>
+                            <br><br>
+                            <input type="submit" class="submit">
+                            <br><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
     </header>
     <div class="parallax1">
         <div class="heading">
-            <img class="town" src="images/TownWhite.png" >
+            <img class="town" src="images/TownWhite.png">
         </div>
     </div>
 
     <a id="about"></a>
     <section class="secOne">
-        <h1><a href="#home"><img class="logo" src="images/TownRed.png" alt="logo red"></a><br /><span
-                id="fine" style="color:#000 ;">Fine Chinese Cuisine</span></h1>
+        <h1><a href="#home"><img class="logo" src="images/TownRed.png" alt="logo red"></a><br /><span id="fine"
+                style="color:#000 ;">Fine Chinese Cuisine</span></h1>
         <!--Heading level 1; text appears larger and bolder as numbers decriment default size is 32px-->
         <h3 style="color: #fff;"><em>We combine a variety of chinese cuisine
                 to excite and delight our customers.</em></h3>
@@ -85,9 +120,10 @@ header {
     <div class="parallax2">
         <Div>
         </Div>
-    </div>    
+    </div>
     <section class="secTwo">
         <div class="dark" class="heading-small">
+            <a href="#home"><img class="logo" src="images/TownRed.png" alt="logo red"></a>
             <h2 style="color: #be1e2d; text-transform: uppercase;">
                 Mission Statement
             </h2>
@@ -105,11 +141,11 @@ header {
     <a id="res">
         <section class="secThree">
             <div class="dark" class="heading-small">
-                <h3><a href="#home"><img class="logo" src="images/TownRed.png" alt="logo red"></a><br /><span
-                        id="fine" style="color:#000 ;">Fine Chinese Cuisine</span></h3>
-                <h1>
+                <h3><a href="#home"><img class="logo" src="images/TownRed.png" alt="logo red"></a><br /><span id="fine"
+                        style="color:#000 ;">Fine Chinese Cuisine</span></h3>
+                <h2>
                     Reservations
-                </h1>
+                </h2>
                 <div class="row">
                     <div class="column">
                         Don't see your reservation? <br> Call and we'll Look it up with your email address.<br><br>
@@ -168,8 +204,12 @@ header {
     </div>
     </div>
     <footer class="footer">
-        <p style="font-family: majesti-banner-light, serif;">Copyright 2020 Town Fine Dining</p>
-    </footer c>
+        <p style="font-family: majesti-banner-light, serif;">Copyright 2020 &nbsp; &diams; &nbsp;<a href="#home"><img
+                    class="logoF" src="images/TownRed.png" alt="logo red"></a>
+            &nbsp; &diams;
+            &nbsp; Phone:
+            555-333-1177 &nbsp; &diams; &nbsp; Address: 113 Majestic Ave &nbsp; &diams; &nbsp; NY, NY 10001 <br><br></p>
+    </footer>
 </body>
 
 </html>
