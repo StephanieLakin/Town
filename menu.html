@@ -13,7 +13,7 @@
 
 <body class="menuBody">
     <a id="home"></a>
-    <header style="text-align: center; padding-bottom: 2em;">
+    <header>
         <img class="logo" src="./images/TownRed.png" height="auto" width="15%" alt="logo">
         <!--defines an  image in an html page-->
         <nav>
@@ -25,60 +25,105 @@
                 <li><a href="./index.html#res">Reservations</a></li>
             </ul>
         </nav>
+        <div>
+            <a class="button" href="#modal1" id="contactModal">Contact Us</a>
+        </div>
+        <div id="modal1" class="overlay">
+            <div class="modal">
+                <h2>Questions or Concerns:</h2>
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <form class="contact">
+                        <label for="firstname" class="modalFullName">
+                            Name:<br>
+                            <input type="text" id="Modalirstname">
+                        </label>
+                        <br><br>
+                        <label for="email" class="modalEmail">
+                            Email:<br>
+                            <input type="email">
+                        </label>
+                        <br><br>
+
+                        <label for="phone" class="modalPhone">
+                            Telephone:<br>
+                            <input type="tel">
+                        </label>
+                        <br><br>
+                        <label for="message" class="modalMessage">
+                            Message:<br>
+                            <textarea></textarea>
+                        </label>
+                        <br><br>
+                        <input type="submit" class="submit">
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+        </div>
         <br><br>
     </header>
     <br><br>
+    <div class="row"></div>
     <div class="container">
-        <ul>
-            <li>
-                <input type="radio" checked="checked" name="slide">
-                <div class="slide">
-                    <img src="./images/menu_1.png" alt="menu_1">
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="slide">
-                <div class="slide">
-                    <img src="./images/menu_2.png" alt="menu_2">
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="slide">
-                <div class="slide">
-                    <img src="./images/menu_3.png" alt="menu_3">
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="slide">
-                <div class="slide">
-                    <img src="./images/menu_4.png" alt="menu_4">
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="slide">
-                <div class="slide">
-                    <img src="./images/menu_5.png" alt="menu_5">
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="slide">
-                <div class="slide">
-                    <img src="./images/menu_6.png" alt="menu_6">
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="slide">
-                <div class="slide">
-                    <img src="./images/menu_7.png" alt="menu_7">
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="slide">
-                <div class="slide">
-                    <img src="./images/menu_8.png" alt="menu_8">
-                </div>
-            </li>
-        </ul>
+        <div class="left">
+            <img class="happy" src="./images/carryOut.png" alt="carryOut">
+        </div>
+        <div class="middle">
+            <ul>
+                <li>
+                    <input type="radio" checked="checked" name="slide">
+                    <div class="slide">
+                        <img src="./images/menu_1.png" alt="menu_1">
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="slide">
+                    <div class="slide">
+                        <img src="./images/menu_2.png" alt="menu_2">
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="slide">
+                    <div class="slide">
+                        <img src="./images/menu_3.png" alt="menu_3">
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="slide">
+                    <div class="slide">
+                        <img src="./images/menu_4.png" alt="menu_4">
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="slide">
+                    <div class="slide">
+                        <img src="./images/menu_5.png" alt="menu_5">
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="slide">
+                    <div class="slide">
+                        <img src="./images/menu_6.png" alt="menu_6">
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="slide">
+                    <div class="slide">
+                        <img src="./images/menu_7.png" alt="menu_7">
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="slide">
+                    <div class="slide">
+                        <img src="./images/menu_8.png" alt="menu_8">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <img class="happy" src="./images/HappyHour.png" alt="HappyHour">
+        </div>
     </div>
     <footer class="menuFooter">
         <p style="font-family: majesti-banner-light, serif;">Copyright 2020 &nbsp; &diams; &nbsp;<a href="#home"><img

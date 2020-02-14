@@ -13,12 +13,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    transition: transform .5s ease;
 }
 body > header > img .logo {
   cursor: pointer;
   margin-left: 0;
   width: 15%;
   height: auto;
+  transition: transform .5s ease;
 }
 
 .logo {
@@ -26,11 +28,11 @@ body > header > img .logo {
   margin-left: 0;
   width: 20%;
   height: auto;
+  transition: transform .5s ease;
 }
 
 .logo:hover {
-  transform: scale(1.1);
-  padding-bottom: 20px;
+  transform: scale(1.1);  
 }
 
 footer .logoF {
@@ -38,6 +40,7 @@ footer .logoF {
   margin: 0 auto;
   width: 5%;
   height: auto;
+  transition: transform .3s ease;
 }
 
 footer .logoF:hover {
@@ -53,12 +56,13 @@ footer .logoF:hover {
   width: 5rem;
   height: auto;
   text-align: center;
-  float: right;
+  float: right;  
 }
 
 nav .nav_links {
   width: 100%;
   float: left;
+  text-shadow: 2px 2px #000;
 }
 
 nav .nav_links li {
@@ -311,14 +315,38 @@ textarea {
 }
 
 .container ul {
-  margin: 0 auto;
+  margin: auto;
   padding: 0;
   position: relative;
-  width: 30%;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+
+.left {
+  float: left;
+  width: 33%;
+}
+.middle {
+  float: left;
+  width: 30%;
+}
+.right {
+  float: left;
+  width: 33%;
+}
+
+.happy {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  border: 0.5rem solid #fff;
+  border-radius: 1em;
+  border-style: double;
+  padding: 0.5rem;
 }
 
 ul li {
@@ -382,7 +410,8 @@ h1 {
   border: 2px solid #fff;
   border-radius: 5px/10px;
   text-decoration: none;
-  cursor: pointer;
+   box-shadow: 5px 5px 2px rgb(41, 40, 40);
+  cursor: pointer;  
   transition: all 0.3s ease-out;
 }
 .button:hover {
@@ -453,10 +482,11 @@ h1 {
     font-size: 1em;
     position: absolute;
     z-index: 1;
+     text-shadow: 3px 3px 1px rgb(43, 40, 40);
   }
   .menuFooter p {
     text-align: center;
-  }
+  
 
 
 /* media */
