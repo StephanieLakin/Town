@@ -1,4 +1,4 @@
-/* body, html {
+body, html {
     height: 100vh;
     background-color:#41393d ;
     margin: 0;
@@ -8,13 +8,12 @@
     ;
     text-align: center;
 }
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-} */
+}
 body > header > img .logo {
   cursor: pointer;
   margin-left: 0;
@@ -29,11 +28,20 @@ body > header > img .logo {
   height: auto;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+  padding-bottom: 20px;
+}
+
 footer .logoF {
   cursor: pointer;
-  margin-bottom: 0;
+  margin: 0 auto;
   width: 5%;
   height: auto;
+}
+
+footer .logoF:hover {
+  transform: scale(1.1);  
 }
 
 .town {
@@ -202,8 +210,8 @@ h2 {
   background-attachment: fixed;
   overflow-y: hidden;
 }
-/* reservation form */
 
+/* reservations section */
 .row {
   display: flex;
   align-items: center;
@@ -217,7 +225,7 @@ h2 {
 }
 
 .Chopsticks {
-  width: 100%;
+  width: 50%;
   height: auto;
   margin: auto;
   border: 0.5rem solid #fff;
@@ -227,7 +235,7 @@ h2 {
 }
 
 .food {
-  width: 100%;
+  width: 50%;
   height: auto;
   margin: auto;
   border: 0.5rem solid #fff;
@@ -237,7 +245,7 @@ h2 {
 }
 
 .reserve {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
   margin: 0em auto;
   border: 0.5rem solid #fff;
@@ -282,11 +290,6 @@ textarea {
   height: auto;
   border-radius: 0.5em;
 }
-
-/* select > option:nth-child(1) {
-    font-size: 3rem;
-    text-align: center;
-} */
 
 /* menu */
 
@@ -386,7 +389,6 @@ h1 {
   background: #fff;
   color: #be1e2d;
 }
-
 .overlay {
   position: fixed;
   z-index: 1;
@@ -437,6 +439,28 @@ h1 {
   overflow: auto;
 }
 
+/* footer */
+.footer {
+    background-color: #41393d;
+    overflow: hidden;
+    color: #fff;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+  }
+  .footer p {
+    font-family: majesti-banner-light, serif;
+    color: #fff;
+    font-size: 1em;
+    position: absolute;
+    z-index: 1;
+  }
+  .menuFooter p {
+    text-align: center;
+  }
+
+
+/* media */
+
 @media screen and (max-width: 700px) {
   .box {
     width: 70%;
@@ -445,7 +469,6 @@ h1 {
     width: 70%;
   }
 }
-/* media */
 
 @media (max-width: 768px) {
   .heading {
@@ -458,16 +481,4 @@ h1 {
     width: 100%;
     padding: 0;
   }
-  .footer {
-    background-color: #41393d;
-    overflow: hidden;
-    color: #fff;
-    padding-bottom: 2em;
-    margin-bottom: 2em;
-  }
-  .footer p {
-    font-family: majesti-banner-light, serif;
-    color: #fff;
-    font-size: 0.5em;
-  }
-}
+  
