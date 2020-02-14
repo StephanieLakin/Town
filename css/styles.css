@@ -393,6 +393,8 @@ body {
   font-family: majesti-banner-light, serif;
   background: no-repeat;
   background-size: cover;
+  position: absolute;
+  z-index:2;
   height: 100vh;
 }
 
@@ -441,7 +443,7 @@ h1 {
   background-color: #41393d;
   border-radius: 5px;
   width: 30%;
-  position: relative;
+  position: relative;  
   transition: all 5s ease-in-out;
 }
 
