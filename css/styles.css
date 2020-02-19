@@ -228,6 +228,11 @@ h2 {
   padding: 5px;
 }
 
+.column #specials {
+  flex: 33.33%;
+  padding: 5px;
+}
+
 .Chopsticks {
   width: 50%;
   height: auto;
@@ -246,6 +251,16 @@ h2 {
   border-radius: 3em;
   border-style: double;
   padding: 0.5rem;
+}
+
+.special {
+  width: 75%;
+  height: auto;
+  margin: auto;
+  border: 0.5rem solid #fff;
+  border-radius: 3em;
+  border-style: double;
+  padding: 0.25rem;
 }
 
 .reserve {
@@ -281,13 +296,13 @@ input {
 }
 .submit {
   width: 30%;
-  font-size: 1rem;
-  background-color: #fff;
+  font-size: 1rem;  
+  background-color: #be1e2d;
 }
 .submit:hover {
   width: 30%;
   font-size: 1rem;
-  background-color: #be1e2d;
+  background-color: #fff;
 }
 textarea {
   width: 80%;

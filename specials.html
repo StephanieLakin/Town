@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--Document type definition: enables correct display mode for html5 -->
+<html>
+<!--html tag -the outer container for an html document -->
+
+<head>
+    <!--defines area containing information about the document (such as title, meta, link, styles etc.) -->
+    <meta name="viewport" content="width=divice-width, initial-scale=1" charset=utf-8>
+    <!--Metadata:defines keywords, description, encoding etc.  -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Town Fine Dining|Specials</title>
+</head>
+
+<body class="specialsBody">
+    <a id="home"></a>
+    <header>
+        <img class="logo" src="./images/TownRed.png" alt="logo">
+        <!--defines an  image in an html page-->
+        <nav>
+            <ul class="nav_links">
+                <!--Unordered List: creates a bulleted list as opposed ot ordered list which displays numbered list items -->
+                <!-- <li><a href="#home">Home</a></li> -->
+                <!--list item- displays the individual items in an unordered or ordered list -->
+                <li><a href="./index.html#about">About Us</a></li>
+                <li><a href="./index.html#res">Reservations</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a class="button" href="#modal1" id="contactModal">Contact Us</a>
+        </div>
+        <div id="modal1" class="overlay">
+            <div class="modal">
+                <h2>Questions or Concerns:</h2>
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <form class="contact">
+                        <label for="firstname" class="modalFullName">
+                            Name:<br>
+                            <input type="text" id="ModalFirstname">
+                        </label>
+                        <br><br>
+                        <label for="email" class="modalEmail">
+                            Email:<br>
+                            <input type="email">
+                        </label>
+                        <br><br>
+
+                        <label for="phone" class="modalPhone">
+                            Telephone:<br>
+                            <input type="tel">
+                        </label>
+                        <br><br>
+                        <label for="message" class="modalMessage">
+                            Message:<br>
+                            <textarea></textarea>
+                        </label>
+                        <br><br>
+                        <input onClick="window.location.href = './index.html';" type="submit" class="submit">
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </header>
+    <br><br>
+    <div class="row">
+        <div class="column">
+            <h3>Drink Specials</h3><br><br>
+            <img src="images/drinkSpecial.PNG" alt="drinks" class="special">
+            <br><br>
+        </div>
+        <div class="column">
+            <h2>Ask Your Server About our Daily Entree Specials!</h2>
+            <img src="images/dragon.jpg" alt="dragon" class="special">
+            <h4> Phone:
+                555-333-1111 &nbsp; &diams; &nbsp; Address: 113 Majestic Ave &nbsp; &diams; &nbsp; NY, NY 10001</h4>
+            <br><br>
+
+        </div>
+        <div class="column">
+            <h3>Dessert Specials</h3><br><br>
+            <img src="images/moonSpecial.PNG" alt="dessert" class="special">
+            <br><br>
+        </div>
+    </div>
+    <br><br>
+    <br><br>
+    <footer class="Footer">
+        <p style="font-family: majesti-banner-light, serif;">Copyright 2020 &nbsp; &diams; &nbsp;<span> <a
+                    href="./index.html#home"><img class="logoF" src="./images/TownRed.png" alt="logo red"></a></span>
+
+            &nbsp;&nbsp; &diams;&nbsp; Fine Dining</p>
+        <br><br>
+    </footer>
+</body>
+
+</html>
