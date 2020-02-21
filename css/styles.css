@@ -503,6 +503,17 @@ h1 {
   }
   .menuFooter p {
     text-align: center;
+  }
+
+   section .sitemap {
+background-color: #41393d;
+font-family: majesti-banner-light, serif;
+    color: #fff;
+    font-size: 1em;
+    position: absolute;
+    z-index: 1;
+     text-shadow: 3px 3px 1px rgb(43, 40, 40);
+    }
   
 
 
