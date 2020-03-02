@@ -31,6 +31,14 @@ body > header > img .logo {
   transition: transform .5s ease;
 }
 
+.logo2 {  
+  margin-left: 0;
+  width: 20%;
+  height: auto;  
+}
+
+
+
 .logo:hover {
   transform: scale(1.1);  
 }
@@ -40,6 +48,7 @@ footer .logoF {
   margin: 0 auto;
   width: 5%;
   height: auto;
+  padding-bottom: 0em;
   transition: transform .3s ease;
 }
 
@@ -465,7 +474,7 @@ h1 {
 .modal h2 {
   margin-top: 0;
   color: #be1e2d;
-  font-family: majesti-banner-light serif;
+  font-family: "majesti-banner-light serif";
 }
 .modal .close {
   position: absolute;
@@ -514,7 +523,27 @@ font-family: majesti-banner-light, serif;
     z-index: 1;
      text-shadow: 3px 3px 1px rgb(43, 40, 40);
     }
-  
+    #sitemap {
+      font-family: majesti-banner-light, serif;
+      color: #fff;
+      font-size: 1.2em;
+      text-decoration:none;      
+       text-shadow: 3px 3px 1px rgb(43, 40, 40);
+    }
+     .sitemap a {
+      background-color: #41393d;
+      color: #fff;
+      font-family: majesti-banner-light, serif;
+      text-decoration: none; 
+    }
+    .sitemap a:hover {
+      background-color: #41393d;
+      color:#be1e2d;
+      font-family: majesti-banner-light, serif;
+      text-decoration: none;     
+      
+    }
+   
 
 
 /* media */
@@ -539,4 +568,4 @@ font-family: majesti-banner-light, serif;
     width: 100%;
     padding: 0;
   }
-  
+
